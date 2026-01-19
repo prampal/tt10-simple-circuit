@@ -24,9 +24,14 @@ module tt_um_prampal_simple_circuit (
     wire x;
     wire y;
     // Logic implementation
-    and g1(e, A, B);
-    not g2(y, C);
-    or g3(x, e, y);
+    //and g1(e, A, B);
+    //not g2(y, C);
+    //or g3(x, e, y);
+
+    assign e = A & B;
+    assign y = ~C;
+    assign x = e | y;
+
     // Assign outputs
     assign uo_out[0] = x;
     //assign uo_out[1] = y;
