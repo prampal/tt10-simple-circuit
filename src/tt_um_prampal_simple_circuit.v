@@ -29,7 +29,8 @@ module tt_um_prampal_simple_circuit (
     or g3(x, e, y);
     // Assign outputs
     assign uo_out[0] = x;
-    assign uo_out[1] = y;
+    //assign uo_out[1] = y;
+    assign uo_out[1] = 1'b0;
     assign uo_out[2] = 1'b0;
     assign uo_out[3] = 1'b0;
     assign uo_out[4] = 1'b0;
